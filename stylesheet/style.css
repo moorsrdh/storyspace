@@ -1,0 +1,480 @@
+/*background */
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial;
+  margin: 0;
+  padding: 0;
+  background-image: url("../Images/background.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: #e0e0e0;
+  min-height: 500vh;
+}
+
+main {
+  background-image: url("../Images/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navigation */
+.main-nav {
+  background: linear-gradient(135deg, #162258 0%, #2c1444 100%);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-list li {
+  margin: 0;
+}
+
+.nav-list a {
+  display: block;
+  padding: 16px 24px;
+  color: #785793;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Header */
+.hero-header {
+  margin-bottom: 90px;
+  margin-top: 0px;
+  padding: 100px 30px;
+  background: linear-gradient(
+    to bottom,
+    rgba(102, 126, 234, 0.2),
+    rgba(30, 20, 60, 0.4)
+  );
+  border-radius: 8px;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+.hero-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 100;
+  margin: 0 0 10px 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(216, 203, 235);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 100px;
+  margin: 10px 0;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 12px;
+  margin: 10px 0 0 0;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+/* Introduction Section */
+.intro {
+  background: rgba(30, 20, 60, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 45px;
+  border-radius: 8px;
+  margin-bottom: 90px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.intro-text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  color: #785793;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* Series Information */
+.series {
+  background: rgba(20, 20, 40, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  margin-bottom: 100px;
+  border-radius: 12px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.series:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.6);
+}
+
+.series-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  position: relative;
+}
+
+.series-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 40, 0.3) 0%,
+    rgba(20, 20, 40, 0.95) 100%
+  );
+}
+
+.series-content {
+  padding: 30px;
+  color: #e0e0e0;
+}
+
+.author {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 12px 0;
+  font-weight: 500;
+}
+
+.series-acotar {
+  border-left: 4px solid #ff6b6b;
+}
+
+.series-kindred {
+  border-left: 4px solid #4ecdc4;
+}
+
+.series-empyrean {
+  border-left: 4px solid #ffe66d;
+}
+
+.series-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.series-acotar .series-title {
+  color: #ff9999;
+}
+
+.series-kindred .series-title {
+  color: #7ee8e8;
+}
+
+.series-empyrean .series-title {
+  color: #fff59d;
+}
+
+/* Book-tag andsize */
+.book-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.book-tag {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.series-acotar .book-tag {
+  border-color: #ff6b6b;
+  color: #ff9999;
+}
+
+.series-kindred .book-tag {
+  border-color: #4ecdc4;
+  color: #7ee8e8;
+}
+
+.series-empyrean .book-tag {
+  border-color: #ffe66d;
+  color: #fff59d;
+}
+
+/* Series Descriptions */
+.series-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #bbb;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/* Dropdown Button */
+.dropdown-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e0e0e0;
+  padding: 14px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dropdown-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 18px;
+}
+
+.location-dropdown-btn {
+  background: transparent;
+  border: none;
+  color: inherit;
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.location-dropdown-btn:hover {
+  color: #ddd;
+}
+
+.location-dropdown-btn.active .dropdown-icon {
+  transform: rotate(45deg);
+}
+
+.location-dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-top: 0;
+  padding-left: 15px;
+}
+
+.location-dropdown-content.active {
+  max-height: 400px;
+  margin-top: 10px;
+}
+
+.location-dropdown-content p {
+  margin: 0;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.dropdown-btn.active .dropdown-icon {
+  transform: rotate(45deg);
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-top: 0;
+  padding: 0;
+}
+
+.dropdown-content.active {
+  max-height: 1200px;
+  margin-top: 15px;
+  padding: 15px 0;
+}
+
+.dropdown-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.dropdown-content li {
+  padding: 10px 0;
+  color: #aaa;
+  font-size: 14px;
+  border-left: 2px solid;
+  padding-left: 15px;
+  margin-left: -20px;
+  transition: color 0.2s ease;
+}
+
+.dropdown-content li:hover {
+  color: #ddd;
+}
+
+.series-acotar .dropdown-content li {
+  border-left-color: #ff6b6b;
+}
+
+.series-kindred .dropdown-content li {
+  border-left-color: #4ecdc4;
+}
+
+.series-empyrean .dropdown-content li {
+  border-left-color: #ffe66d;
+}
+
+.series-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.series-container {
+  width: 45%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: rgba(20, 20, 40, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .series {
+    padding: 20px;
+  }
+
+  .series-image {
+    height: 200px;
+  }
+
+  .series-title {
+    font-size: 20px;
+  }
+}
+/* Footer */
+footer {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #785793;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #190f34;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  text-align: center;
+  z-index: 1000;
+}
+/* Book recommendation */
+#book-recommendation {
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+#book-recommendation.fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+}
+/* Style the main card container */
+  .card {
+  background: #1a1528; /* Deep twilight purple */
+  border: 1px solid #3d305b; /* Subtly glowing border */
+  border-radius: 12px; /* Smooth rounded corners */
+  padding: 30px;
+  max-width: 500px;
+  margin: 30px auto; /* Centers the card on your page */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4); /* Deep drop shadow */
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style the card header */
+
+/* Style the dynamic output text container */
+#recommendation {
+  color: #b3a7d6; /* Readable muted purple-gray text */
+  font-size: 1.05rem;
+  line-height: 1.6;
+  min-height: 100px; /* Keeps card height stable during transitions */
+  margin-bottom: 25px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2); /* Slightly darker inner text box */
+  border-radius: 8px;
+  opacity: 1;
+  transition:
+    opacity 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
+}
+#book-recommendation {
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+#book-recommendation.fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+}
