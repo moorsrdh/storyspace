@@ -1,4 +1,4 @@
-/*background */
+/* Background & Global Setup */
 body {
   font-family:
     system-ui,
@@ -14,7 +14,7 @@ body {
   background-size: cover;
   background-position: center;
   color: #e0e0e0;
-  min-height: 500vh;
+  min-height: 100vh;
 }
 
 main {
@@ -32,6 +32,7 @@ main {
   position: sticky;
   top: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .nav-list {
@@ -50,7 +51,6 @@ main {
 }
 
 .nav-list a {
-  color: #fff6f6;
   display: block;
   padding: 16px 24px;
   color: #c49ce6;
@@ -78,8 +78,6 @@ main {
 }
 
 .hero-title {
-  margin-top: 10px;
-  margin-bottom: 10px;
   text-align: center;
   font-size: 15px;
   font-weight: 100;
@@ -119,14 +117,28 @@ main {
 .intro-text {
   font-size: 14px;
   line-height: 1.6;
-  margin: 0;
+  margin: 10px 0;
   color: #ab8dc4;
   text-align: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
 
-/* Series Information */
+/* Series Section & Containers */
+.series-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.series-container {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  width: min(90%, 700px);
+  margin: 0 auto;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
 .series {
   background: rgba(20, 20, 40, 0.8);
   backdrop-filter: blur(10px);
@@ -221,11 +233,11 @@ main {
   color: #fff59d;
 }
 
-/* Book-tag andsize */
+/* Book Tags */
 .book-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 16px;
   margin-bottom: 40px;
 }
 
@@ -253,7 +265,6 @@ main {
   color: #fff59d;
 }
 
-/* Series Descriptions */
 .series-description {
   font-size: 15px;
   line-height: 1.7;
@@ -262,7 +273,7 @@ main {
   padding: 0;
 }
 
-/* Dropdown Button */
+/* Dropdown Buttons & Content */
 .dropdown-btn {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -311,7 +322,8 @@ main {
   color: #ddd;
 }
 
-.location-dropdown-btn.active .dropdown-icon {
+.location-dropdown-btn.active .dropdown-icon,
+.dropdown-btn.active .dropdown-icon {
   transform: rotate(45deg);
 }
 
@@ -335,11 +347,6 @@ main {
   line-height: 1.6;
 }
 
-.dropdown-btn.active .dropdown-icon {
-  transform: rotate(45deg);
-}
-
-/* Dropdown Content */
 .dropdown-content {
   max-height: 0;
   overflow: hidden;
@@ -356,9 +363,8 @@ main {
 
 .dropdown-content ul {
   list-style: none;
-  padding: 0;
+  padding: 0 0 0 20px;
   margin: 0;
-  padding-left: 20px;
 }
 
 .dropdown-content li {
@@ -387,257 +393,7 @@ main {
   border-left-color: #ffe66d;
 }
 
-.series-section {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.series-container {
-  display: flex;
-  flex-direction: column;
-  gap: 120px;
-
-  width: min(90%, 700px);
-
-  margin: 0 auto;
-  padding: 40px 0;
-  box-sizing: border-box;
-}
-/* Responsive Design, mobile */
-
-@media (max-width: 768px) {
-  .series-container {
-    width: 90%;
-    padding: 20px;
-    gap: 30px;
-  }
-
-  .hero-header {
-    padding: 50px 20px;
-    margin-bottom: 60px;
-  }
-
-  .subtitle {
-    font-size: 60px;
-  }
-
-  .intro {
-    padding: 25px;
-    margin-bottom: 60px;
-  }
-
-  .intro-text {
-    font-size: 13px;
-  }
-
-  .book-tags {
-    gap: 12px;
-  }
-
-  .book-tag {
-    font-size: 11px;
-    padding: 6px 10px;
-  }
-
-  .series {
-    padding: 20px;
-  }
-
-  .series-image {
-    height: 200px;
-    margin: -20px -20px 15px -20px;
-  }
-
-  .series-title {
-    font-size: 20px;
-  }
-
-  .nav-list {
-    font-size: 12px;
-  }
-
-  .nav-list a {
-    padding: 12px 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-
-  .main-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  .nav-list {
-    font-size: 11px;
-    justify-content: space-around;
-  }
-
-  .nav-list a {
-    padding: 10px 8px;
-    font-size: 10px;
-  }
-
-  main {
-    padding-bottom: 60px;
-  }
-
-  .hero-header {
-    padding: 40px 15px;
-    margin-bottom: 40px;
-    border-radius: 4px;
-  }
-
-  .hero-title {
-    font-size: 11px;
-    letter-spacing: 2px;
-  }
-
-  .subtitle {
-    font-size: 36px;
-    margin: 8px 0;
-    letter-spacing: 2px;
-  }
-
-  .tagline {
-    font-size: 12px;
-  }
-
-  .intro {
-    padding: 15px;
-    margin-bottom: 40px;
-    border-radius: 4px;
-  }
-
-  .intro-text {
-    font-size: 12px;
-    line-height: 1.5;
-  }
-
-  .series-container {
-    display: flex;
-    flex-direction: column;
-    gap: 120px;
-    height: fit-content;
-    width: 65%; /* ← Change this value */
-    margin: 0 auto;
-    padding: 60px;
-    box-sizing: border-box;
-  }
-
-  .series {
-    padding: 15px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .series-image {
-    height: 150px;
-    margin: -15px -15px 12px -15px;
-  }
-
-  .author {
-    font-size: 11px;
-    margin-bottom: 8px;
-  }
-
-  .series-title {
-    font-size: 18px;
-    margin-bottom: 12px;
-  }
-
-  .book-tags {
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 20px;
-  }
-
-  .book-tag {
-    font-size: 10px;
-    padding: 5px 8px;
-    display: block;
-  }
-
-  .series-description {
-    font-size: 13px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-
-  .dropdown-btn {
-    padding: 10px 12px;
-    font-size: 11px;
-    gap: 10px;
-  }
-
-  .dropdown-icon {
-    font-size: 16px;
-  }
-
-  .location-dropdown-btn {
-    font-size: 12px;
-    padding: 8px 0;
-  }
-
-  .location-dropdown-content p {
-    font-size: 12px;
-    line-height: 1.5;
-  }
-
-  .dropdown-content li {
-    font-size: 12px;
-    padding: 8px 0;
-  }
-
-  .card {
-    padding: 20px;
-    max-width: 90%;
-    margin: 20px auto;
-  }
-
-  #book-recommendation {
-    font-size: 0.95rem;
-    min-height: 80px;
-    margin-bottom: 15px;
-    padding: 10px;
-  }
-
-  #generate-btn {
-    padding: 10px 16px;
-    font-size: 14px;
-  }
-
-  footer {
-    font-size: 14px;
-    padding: 6px;
-  }
-}
-/* Footer */
-footer {
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #785793;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #190f34;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  padding: 8px;
-  text-align: center;
-  z-index: 1000;
-}
-
-/* Book recommendation card */
+/* Book Recommendation Card */
 .card {
   background: #1a1528;
   border: 1px solid #3d305b;
@@ -669,6 +425,7 @@ footer {
   opacity: 0;
   transform: scale(0.95);
 }
+
 #generate-btn {
   background: #3f2a57;
   border: 1px solid #785793;
@@ -681,7 +438,25 @@ footer {
     background-color 0.3s ease,
     transform 0.2s ease-in-out;
 }
-/* dragon */
+
+/* Footer */
+footer {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #785793;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #190f34;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 12px 8px;
+  text-align: center;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Dragon Animation */
 #dragon {
   position: fixed;
   top: 100px;
@@ -689,7 +464,6 @@ footer {
   z-index: -1;
   width: 120px !important;
   height: 120px !important;
-
   background-image: url("../Images/dragon.png");
   background-repeat: no-repeat;
   background-size: 480px 480px;
@@ -718,5 +492,244 @@ footer {
   100% {
     left: 100vw;
     transform: translateY(0px);
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================================== */
+
+/* Tablet & Mobile Background Fix */
+@media (max-width: 768px) {
+  body,
+  main {
+    background-attachment: scroll; /* Prevents mobile browser scroll freezing */
+  }
+
+  .series-container {
+    width: 90%;
+    padding: 20px 0;
+    gap: 40px;
+  }
+
+  .hero-header {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+  }
+
+  .subtitle {
+    font-size: 50px;
+  }
+
+  .intro {
+    padding: 25px;
+    margin-bottom: 60px;
+  }
+
+  .intro-text {
+    font-size: 13px;
+  }
+
+  .book-tags {
+    gap: 12px;
+  }
+
+  .book-tag {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .series {
+    padding: 20px;
+  }
+
+  .series-image {
+    height: 200px;
+    margin: -20px -20px 15px -20px;
+    width: calc(100% + 40px);
+  }
+
+  .series-title {
+    font-size: 20px;
+  }
+
+  .nav-list {
+    font-size: 12px;
+  }
+
+  .nav-list a {
+    padding: 12px 16px;
+  }
+}
+
+/* Small Mobile Screen Fixes (Phones) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Fixed Bottom Nav Bar */
+  .main-nav {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-bottom: 0;
+    z-index: 1000;
+  }
+
+  .nav-list {
+    font-size: 11px;
+    justify-content: space-around;
+  }
+
+  .nav-list a {
+    padding: 12px 8px;
+    font-size: 11px;
+  }
+
+  main {
+    padding-bottom: 70px; /* Leaves room above bottom nav */
+  }
+
+  /* Scaled Down Hero Header */
+  .hero-header {
+    padding: 24px 15px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+  }
+
+  .hero-title {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .subtitle {
+    font-size: 32px; /* Fits naturally on mobile screens */
+    margin: 8px 0;
+    letter-spacing: 1px;
+  }
+
+  .tagline {
+    font-size: 12px;
+  }
+
+  .intro {
+    padding: 15px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+  }
+
+  .intro-text {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  /* Fixed Container Width & Padding */
+  .series-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: auto;
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+
+  .series {
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .series-image {
+    height: 150px;
+    margin: -15px -15px 12px -15px;
+    width: calc(100% + 30px);
+  }
+
+  .author {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .series-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .book-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .book-tag {
+    font-size: 10px;
+    padding: 5px 8px;
+    display: inline-block;
+  }
+
+  .series-description {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .dropdown-btn {
+    padding: 10px 12px;
+    font-size: 11px;
+    gap: 10px;
+  }
+
+  .dropdown-icon {
+    font-size: 16px;
+  }
+
+  .location-dropdown-btn {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+
+  .location-dropdown-content p,
+  .dropdown-content li {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .dropdown-content li {
+    padding: 8px 0;
+  }
+
+  .card {
+    padding: 20px;
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  #book-recommendation {
+    font-size: 0.95rem;
+    min-height: 80px;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  #generate-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 12px 8px;
+    margin-bottom: 45px; /* Lifted so bottom nav doesn't cover it */
   }
 }
