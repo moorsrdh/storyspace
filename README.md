@@ -55,32 +55,31 @@ During testing, users were able to navigate the website easily and understood ho
 1. Credits
 2. https://web.dev/articles/responsive-web-design-basics
 3. https://www.figma.com/resource-library/responsive-website-design/
-https://developers.figma.com/docs/code/embed-html-css-javascript/
-w3schools
- Adobe
- Figma – background image, overview of the books 
-Canva
- Goodreads.com
-Google images for the book images 
-https://web.dev/learn/html
-Vscode with prettier and other extensions for help 
-https://stackoverflow.com/ 
-https://www.youtube.com/watch?v=z5jZ9lrSpqk
-https://web.dev/learn
-https://www.youtube.com/watch?v=xKOyDDuQSVY
-https://www.youtube.com/watch?v=beJ8fDbX9vs
-ChatGPT – Helped with problems and the dragon 
-Google AI – Dragon picture
-Vscode AI – Helped with editing 
-https://codepen.io/grantjenkins/pen/poeqNve
-https://www.bestcssbuttongenerator.com/
-https://www.figma.com/design/iCu7vbxrhIKXMHXLWk5Wot/Webflow---Figma-Wireframe-kit--Community-?node-id=2-2&p=f&t=7K994jr6Zl7NyB68-0
+4. https://developers.figma.com/docs/code/embed-html-css-javascript/
+5. w3schools
+6. Adobe
+7. Figma – background image, overview of the books 
+8. Canva
+9. Goodreads.com
+10. Google images for the book images 
+11. https://web.dev/learn/html
+12. Vscode with prettier and other extensions for help 
+13. https://stackoverflow.com/ 
+14. https://www.youtube.com/watch?v=z5jZ9lrSpqk
+15. https://web.dev/learn
+16. https://www.youtube.com/watch?v=xKOyDDuQSVY
+17. https://www.youtube.com/watch?v=beJ8fDbX9vs
+18. ChatGPT – Helped with problems and the dragon 
+19. Google AI – Dragon picture
+20. Vscode AI – Helped with editing 
+21. https://codepen.io/grantjenkins/pen/poeqNve
+22. https://www.bestcssbuttongenerator.com/
+23. https://www.figma.com/design/iCu7vbxrhIKXMHXLWk5Wot/Webflow---Figma-Wireframe-kit--Community-?node-id=2-2&p=f&t=7K994jr6Zl7NyB68-0
 
 
 ## Future Improvements
-With more time, I would like to:
-Add more fantasy book series and worlds.
-Include interactive maps for each fictional world.
-Add a search feature and filtering by book series or genre.
-Save users' favorite books and locations using local storage.
+1. Add more fantasy book series and worlds.
+2. Include interactive maps for each fictional world.
+3. Add a search feature and filtering by book series or genre.
+4. Save users' favorite books and locations using local storage.
 
