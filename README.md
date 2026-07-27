@@ -36,24 +36,20 @@ Images resize to fit different screen sizes
 Navigation adjusts for mobile devices
 
 ## User Testing
-During testing, users were able to navigate the website easily and understood how to use the navigation bar and drop-down sections. Both testers commented that the website was organized well, and they appreciated that the book series were grouped clearly with detailed descriptions and images. The hover effects on buttons and drop-down menus helped users recognize what was interactive, and all interactions worked as intended.The biggest area of confusion was the readability of some text. One tester mentioned that
-the some of the paragraphs blended into the background and was easy to overlook, making it
-difficult to immediately understand. Another tester found the email address in the footer difficult
-to read because of the low color contrast. While the website responded well to browser resizing,
-one tester noticed that the margins remained too small on smaller screens, making the layout feel
-cramped. The recommendation to improve text readability appeared more than once through
-comments about contrast and spacing. An unexpected observation was that one tester felt the
-navigation menu was somewhat unnecessary because the page is short, although they
-acknowledged it would become more useful if additional content were added. Overall, testers
-found the website enjoyable, visually appealing, and easy to navigate
+During testing, users were able to navigate the website easily and understood how to use the navigation bar and drop-down sections. Both testers commented that the website was organized well, and they appreciated that the book series were grouped clearly with detailed descriptions and images. The hover effects on buttons and drop-down menus helped users recognize what was interactive, and all interactions worked as intended.The biggest area of confusion was the readability of some text. One tester mentioned that the some of the paragraphs blended into the background and was easy to overlook, making it difficult to immediately understand. Another tester found the email address in the footer difficult to read because of the low color contrast. While the website responded well to browser resizing, one tester noticed that the margins remained too small on smaller screens, making the layout feel cramped. The recommendation to improve text readability appeared more than once through comments about contrast and spacing. An unexpected observation was that one tester felt the navigation menu was somewhat unnecessary because the page is short, although they acknowledged it would become more useful if additional content were added. Overall, testers found the website enjoyable, visually appealing, and easy to navigate.
+
 ## Revisions
-Describe at least three meaningful revisions made after testing.
+1.	Adjusted all the colors to create more contrast and readability.
+2.	Adjusted the responsive margins so the layout has more spacing on smaller screens.
+3.	Changed the footer in the color, text size and added other elements. 
+
 
 ## Technologies Used
 - HTML
 - CSS
 - JavaScript
 - GitHub Pages
+- vscode
 
 ## Credits
 Credits
