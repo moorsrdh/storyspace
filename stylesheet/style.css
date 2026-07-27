@@ -397,12 +397,13 @@ main {
   display: flex;
   flex-direction: column;
   gap: 120px;
-  width: 45%;
+
+  width: min(90%, 700px);
+
   margin: 0 auto;
-  padding: 40px;
+  padding: 40px 0;
   box-sizing: border-box;
 }
-
 /* Responsive Design, mobile */
 
 @media (max-width: 768px) {

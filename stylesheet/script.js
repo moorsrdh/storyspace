@@ -11,11 +11,17 @@ dropdownButtons.forEach(btn => {
         // Scroll expander
         if (this.classList.contains('active')) {
             setTimeout(() => {
-                content.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }, 100);
+               window.scrollBy({
+            top: content.scrollHeight,
+            behavior: "smooth"
+        });
+    }, 300);
         }
     });
 });
+
+
+
 
 // book-recommendation
 const displayDiv = document.getElementById("book-recommendation");
@@ -45,21 +51,16 @@ function getRandomRecommendation() {
 generateBtn.addEventListener("click", getRandomRecommendation);
 
 
-// Grab the dragon element using the correct ID
+// dragon
 const dragon = document.getElementById('dragon');
-
-// Optional: Resets the flight path smoothly if needed
 function resetFlight() {
   if (!dragon) return;
   dragon.style.animation = 'none';
   
-  // Force browser reflow to apply restart
   void dragon.offsetWidth; 
   
   dragon.style.animation = 'flap 0.8s steps(4) infinite, flyAcross 15s linear infinite';
 }
-
-// Event listener for when a flight pass finishes
 if (dragon) {
   dragon.addEventListener('animationiteration', (event) => {
     if (event.animationName === 'flyAcross') {
