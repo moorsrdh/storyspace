@@ -52,9 +52,9 @@ During testing, users were able to navigate the website easily and understood ho
 - vscode
 
 ## Credits
-Credits
-https://web.dev/articles/responsive-web-design-basics
-https://www.figma.com/resource-library/responsive-website-design/
+1. Credits
+2. https://web.dev/articles/responsive-web-design-basics
+3. https://www.figma.com/resource-library/responsive-website-design/
 https://developers.figma.com/docs/code/embed-html-css-javascript/
 w3schools
  Adobe
