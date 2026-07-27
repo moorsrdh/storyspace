@@ -83,8 +83,8 @@ https://www.figma.com/design/iCu7vbxrhIKXMHXLWk5Wot/Webflow---Figma-Wireframe-ki
 
 ## Future Improvements
 With more time, I would like to:
-	Add more fantasy book series and worlds.
-	Include interactive maps for each fictional world.
-	Add a search feature and filtering by book series or genre.
-	Save users' favorite books and locations using local storage.
-<img width="487" height="645" alt="image" src="https://github.com/user-attachments/assets/9e69a76f-ec8c-4cb3-8560-d83cdb887987" />
+Add more fantasy book series and worlds.
+Include interactive maps for each fictional world.
+Add a search feature and filtering by book series or genre.
+Save users' favorite books and locations using local storage.
+
